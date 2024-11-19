@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    margin-top: 60px;
+}
+body{
+    background-color: #7ea8be;
+    text-align: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+}
+
+
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem black;
+    background-color: #FFEAD0;
+    color: #D7263D;
+    font-size: 70px;
+
+    
+}
+.resetbtn{
+    height: 3rem;
+    width: 8rem;
+    border: none;
+    background-color: #303633;
+    border-radius: 1rem;
+    color: #FFEAD0;
+    font-size: 1.3rem;
+}
+.newbtn{
+    margin-top: 5vh;
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    background-color: #303633;
+    border-radius: 1rem;
+    color: #FFEAD0;
+    font-size: 1.3rem;
+}
+#msg{
+    color: #FFEAD0;
+    font-size: 8vmin;
+}
+.msg-container{
+    padding: 39vh;
+}
+.hide{
+    display: none;
+}
+    </style>
+</head>
+<body>
+  <div class="msg-container hide">
+    <p id="msg">
+     Winner
+  </p>
+  <button class="newbtn">New Game</button>
+</div>
+    <h1>Tic-Tac-Toe</h1>
+    
+    <main>
+      <div class="container">
+        <div class="game">
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+
+            
+        </div>
+      </div>
+      <button class="resetbtn">Reset</button>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
